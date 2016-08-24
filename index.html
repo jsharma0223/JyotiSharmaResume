@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+ <html>
+
+ <head>
+ <meta charset="utf-8" />
+ <title>Resume</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script>
+ //Bugfix for Chrome
+ //http://stackoverflow.com/questions/32453806/uncaught-securityerror-failed-to-execute-replacestate-on-history-cannot-be
+ $(document).bind('mobileinit',function(){
+  $.mobile.changePage.defaults.changeHash = false;
+  $.mobile.hashListeningEnabled = false;
+  $.mobile.pushStateEnabled = false;
+ });
+ </script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+
+$(document).on("pageinit","#page5",function(){
+  $("p").on("swipe",function(){
+    $(this).css("color","yellow");
+  });                       
+});
+
+$(document).on("pageinit","#page5",function(){
+  $("p").on("tap",function(){
+    $(this).css("color","white");
+  });                       
+});
+</script>
+
+</head>
+
+<body>
+
+<div data-role="page" id="page1" data-theme="b">
+
+   <div data-role="header">
+      <h1>Resume</h1>
+   </div>
+   <div data-role="content">
+   <h1> Jyoti Sharma's Resume !!!!</h1>
+ <p> Hi My name is Jyoti Sharma. I recently graduated from Framingham State University with Bachelor's of Computer Science</p> 
+<sup>Education:</sup>
+<p>
+Framingham State Univeristy, Framingham MA
+Bachelor of Computer Science. Graduated August 2016
+</p>
+<p>
+Mass Bay Community College, Wellesley MA
+Associate Degree in Computer Science, Graduated May 2014
+</p>
+<br>
+<sup>Website Experience:</sup><br/>
+<p>
+<br>
+ Composed  website in class Mobile Application Development<br/><br>
+ Expanded website using HTML<br/><br>
+ Edited  the website, adding pages and links<br/><br>
+ http://csci325.ricksphp.com/sharma/
+<br/>
+<p/>
+
+
+<canvas id="myCanvas" width="700" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+
+   var c=document.getElementById("myCanvas");
+   var ctx=c.getContext("2d");
+
+   ctx.font="20px Georgia";
+   ctx.fillText("Fluent in English, Hindi and Punjabi",10,50);
+
+   ctx.font="30px Verdana";
+   // Create gradient
+   var gradient=ctx.createLinearGradient(0,0,c.width,0);
+   gradient.addColorStop("0","magenta");
+   gradient.addColorStop("0.5","blue");
+   gradient.addColorStop("1.0","red");
+   // Fill with gradient
+   ctx.fillStyle=gradient;
+   ctx.fillText("Fluent in English, Hindi and Punjabi !",10,90);
+
+  </script>
+
+ 
+ <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">Links</li>
+      <li><a href="#page2" data-transition="turn">Technical Proficiency</a></li>
+      <li><a href="#page3" data-transition="turn">Technical Experience</a></li>
+      <li><a href="#page4" data-transition="turn">Additional Experience</a></li>
+      <li><a href="#page5" data-transition="turn">Website Created For Jyoti Sharma's Resume Only</a></li>
+
+
+    </ul>
+   </div>
+   
+   <div data-role="footer">
+      <h4>Jyoti Sharma - Home</h4>
+   </div>
+
+</div> 
+<div data-role="page" id="page2" data-theme="b">
+
+   <div data-role="header">
+      <h1>TECHINCAL PROFICIENCY</h1>
+   </div>
+   <div data-role="content">
+   <h1> List of Techincal Proficiency</h1>
+ <p>
+ Programming Languages: Java, Visual Basic, HTML, ASPX.net, C, and Python
+<p/>
+<p>
+ Operating systems: Windows and Linux
+<p/><p>
+ Applications and database systems: Java, MS SQL, Microsoft Office, Visual Studio<p/><p>
+ In-depth knowledge of Database Techniques, OS and Data Structures<p/><p>
+ Platforms and Hardware: Desktop and Laptop<p/><p>
+ Knowledge of computer architectures
+   <p/>
+   
+      <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">Links</li>
+      <li><a href="#page1" data-transition="turn">Home</a></li>
+   <li><a href="#page3" data-transition="turn">Technical Experience </a></li>
+      <li><a href="#page4" data-transition="turn">Additional Experience</a></li>
+      <li><a href="#page5" data-transition="turn">Website Created For Jyoti Sharma's Resume Only</a></li>
+
+
+    </ul>
+  </div>
+   <div data-role="footer">
+      <h4>Jyoti Sharma - Resume</h4>
+   </div>
+
+</div>
+<div data-role="page" id="page3" data-theme="b">
+
+   <div data-role="header">
+      <h1> Technical Experience  </h1>
+   </div>
+   <div data-role="content">
+   <p> Technical Experience:
+   </p>
+   <p>
+Boston BioProducts (BBP), Ashland, MA  <br>Summer intern 2016
+IT Intern<br/>
+<br>
+ Facilitated in maintaining BBP-website<br/><br>
+ Assisted in  editing and uploading new BBP-products information<br/><br>
+ Established new programs needed for B to B interactions<br/><br>
+ Excellent in communicating about new ideas<br/><br>
+ Strong problem solving skills, analytical skills<br/><br>
+ Document  preparation and cataloging old and new products<br/>
+<p/><p>
+ Channel 5 News, Needham, MA <br> Summer intern 2014
+ IT Intern<br/>
+<br>
+  Accommodated computer and technical support for end users in person, by mail, and  phone.<br/><br>
+  Installed software and hardware updates<br/><br>
+  Diagnosed helpdesk issues and called technical vendor support for issues related to   warranties<br/><br>
+  Installed security and critical update patch<br/><br>
+  Performed PC Imaging for new computers and laptops components<br/>
+
+  <p/>
+
+  <ul data-role="listview" data-inset="true">
+  <li data-role="list-divider">Links</li>
+      <li><a href="#page1" data-transition="turn">Home</a></li>
+  <li><a href= "#page2" data-transition= "turn">Techincal Proficiency</a></li>
+   <li><a href="#page4" data-transition="turn">Additional Experience</a></li>
+      <li><a href="#page5" data-transition="turn"></a></li>Website Created For Jyoti Sharma's Resume Only
+
+      
+    </ul>   
+  </div>
+   <div data-role="footer">
+      <h4>Jyoti Sharma - Resume</h4>
+   </div>
+
+</div>
+<div data-role="page" id="page4" data-theme="b" >
+
+   <div data-role="header">
+      <h1> Additional Experience </h1>
+   </div>
+   <div data-role="content">
+   <p> Additional Experience:
+   </p>
+   <p> 
+Lens Crafters, Natick, MA      <br> March 2013 - Present
+ <br>Eyewear Consultant<br/>
+<br>
+ Presented excellent Customer service and recommend appropriate eye frames<br/><br>
+ Accomplished daily sales goals by promoting discounts and special offers
+<br/>
+</p>
+     <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">Links</li>
+      <li><a href="#page1" data-transition="turn">Home</a></li>
+     <li><a href="#page2" data-transition="turn">Techincal Proficiency</a></li>
+      <li><a href="#page3" data-transition="turn">Technical Experience</a></li>
+      <li><a href="#page4" data-transition="turn">Additional Experience</a></li>
+      <li><a href="#page5" data-transition="turn">Website Created For Jyoti Sharma's Resume Only</a></li>
+
+
+    </ul>
+  </div>
+   <div data-role="footer">
+      <h4>Jyoti Sharma- Resume</h4>
+<div/>
+
+</body>
+</html>   
